@@ -1,0 +1,133 @@
+# Task Management
+
+A full-stack **Task Management** app with:  
+- **Backend (`api/`)** → Node.js, Express, MongoDB  
+- **Frontend (`client/`)** → React.js, Tailwind CSS, Vite  
+
+---
+
+##  Features
+- Add new tasks  
+- Fetch all tasks (filter: pending/completed)  
+- Mark tasks as completed  
+- Responsive frontend with Tailwind CSS  
+
+---
+
+##  Tech Stack
+**Backend:** Node.js, Express, MongoDB  
+**Frontend:** React.js, Vite, Tailwind CSS  
+**Tools:** Postman (API testing)  
+
+---
+
+##  Getting Started
+
+### 1. Clone Repository
+```bash
+git clone <your-repo-link>
+cd Task-management
+
+
+
+
+Backend Setup (api/)
+
+
+Navigate to backend folder:
+
+cd api
+
+
+Install dependencies:
+
+npm install
+
+
+Create a .env file inside api/:
+
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+
+
+Run backend server:
+
+npm start
+
+
+Backend runs on → http://localhost:5000
+
+3. Frontend Setup (client/)
+
+Navigate to frontend folder:
+
+cd client
+
+
+Install dependencies:
+
+npm install
+
+
+Start frontend:
+
+npm run dev
+
+
+Frontend runs on → http://localhost:5173
+
+ REST API Endpoints
+ Add a Task
+
+POST /tasks
+
+{ "title": "Learn React" }
+
+ Get All Tasks
+
+GET /tasks
+
+/tasks?status=pending → Pending tasks
+
+/tasks?status=completed → Completed tasks
+
+ Mark Task as Completed
+
+PUT /tasks/:id/complete
+
+
+
+
+
+Task-management/
+│
+├── api/                # Backend (Node.js + Express + MongoDB)
+│   ├── controllers/    # Route controllers
+│   ├── models/         # Mongoose models
+│   ├── routes/         # Express routes
+│   ├── index.js        # Entry point
+│   ├── package.json
+│   └── .env
+│
+├── client/             # Frontend (React + Tailwind + Vite)
+│   ├── src/
+│   │   ├── assets/     
+│   │   ├── components/ 
+│   │   ├── helper/     
+│   │   ├── pages/      
+│   │   ├── App.jsx     
+│   │   ├── index.css   
+│   │   └── main.jsx    
+│   ├── index.html
+│   ├── package.json
+│   └── .env
+│
+├── README.md
+└── tailwind.config.js
+
+
+
+
+
+
+Author: Kishan Kumar
